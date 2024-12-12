@@ -1,6 +1,15 @@
 def first_uncommon(matrix, n):
-    # Your implementation here!
-    pass
+    freq = {}
+    for row in matrix:
+        for letter in row:
+            if letter not in freq:
+                freq[letter] = 0
+            freq[letter] += 1
+
+    for row in matrix:
+        for letter in row:
+            if freq[letter] < n:
+                return letter
 
 matrix_1 = (
     ('u','e','r','e', ' ', 'e'),

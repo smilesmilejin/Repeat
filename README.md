@@ -23,3 +23,40 @@ Your function will receive a `matrix` and an integer, `n` where `n > 1`. Our goa
 For example, take `matrix_1` and `n = 3`. We see that, 'u' is repeated 3 times and 'e' is repeated 4 times. However, 'r' appears only 2 times. 'r' is thus the first character when iterating row-wise to appear fewer than n times. The function should return 'r' in this case.
 
 See the tests in the [`main.py`](main.py) file for more examples.
+
+# **NOTES TO INTERVIEWER**
+
+ ## Answers to clarifying questions
+Q: What should I do if none of the strings meet the criteria?
+A: You can assume there will be at least one string that meets the criteria.
+
+Q: What should I do if there is invalid input?
+A: You can assume the input will be valid.
+
+Q: What should I do if matrix is empty?
+A: You can assume the matrix will have at least one string.
+
+Q: Can a string have multiple characters?
+A: No.
+
+Q: Does case matter?
+A: Yes, 'a' and 'A' should be considered different.
+
+Q: Will there be any empty inner tuples?
+A: No.
+
+Q: Can n be less than 2?
+A: Also no.
+
+Q: 💜?
+A: 💜
+
+
+
+
+## Hints for struggling candidates
+
+ - If your candidate struggles with an initial algorithm, encourage them to walk through an example and desrcibe how they would do it using only pen and paper
+
+ - If your candidate is concerned about the complexity of multiple double for-loops, encourage them to not worry about the complexity and just focus on a working solution.
+
